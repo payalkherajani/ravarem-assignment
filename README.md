@@ -1,4 +1,4 @@
-# 🎁 Gift Sending App (Frontend)
+# Gift Sending App (Frontend)
 
 A modern frontend application built with **React, TypeScript, Redux Toolkit, and Ant Design** that allows users to browse products and send gifts by entering recipient and address details.
 
@@ -6,7 +6,7 @@ This project is implemented based on a provided Figma design and focuses on clea
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **React 18**
 - **TypeScript**
@@ -17,7 +17,7 @@ This project is implemented based on a provided Figma design and focuses on clea
 
 ---
 
-## ✨ Features
+## Features
 
 - Product listing with cards
 - Product details modal
@@ -31,12 +31,12 @@ This project is implemented based on a provided Figma design and focuses on clea
 
 ---
 
-## 🛠 Prerequisites
+## Prerequisites
 
 Make sure you have the following installed:
 
 - **Node.js** (v16 or above)
-- **npm** or **yarn**
+- **npm**
 
 Check versions:
 ```bash
@@ -46,16 +46,11 @@ npm -v
 ```
 
 
-## 🚀 Getting Started
-
-Follow the steps below to run the project locally.
-
-### 1️⃣ Clone the repository
-
+### Steps to start the project
 ```bash
-git clone https://github.com/payalkherajani/ravarem-assignment
-cd ravarem-assignment
-npm install
-npm run dev
-http://localhost:5173
+- git clone https://github.com/payalkherajani/ravarem-assignment
+- cd ravarem-assignment
+- npm install
+- npm run dev
+- http://localhost:5173
 ```
