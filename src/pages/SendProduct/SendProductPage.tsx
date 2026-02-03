@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import type { Product } from "../../features/products/types";
 import { useAppDispatch, useAppSelector } from "../../app/reduxHooks";
 import { selectFilteredProducts } from "../../features/products/productSelector";
@@ -119,6 +119,3 @@ function SendProductPage() {
 
 export default SendProductPage;
 
-function uuid() {
-    throw new Error("Function not implemented.");
-}

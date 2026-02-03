@@ -15,7 +15,6 @@ const SendConnectModal = ({ open, product, onBack, onConfirm }: Props) => {
 
   return (
     <Modal open={open} width={1000} footer={null} onCancel={onBack}>
-      {/* Header */}
       <div style={{ marginBottom: 24 }}>
         <Title level={4} style={{ marginBottom: 4 }}>
           Send Gift
@@ -27,7 +26,6 @@ const SendConnectModal = ({ open, product, onBack, onConfirm }: Props) => {
 
       <Form form={form} layout="vertical" onFinish={onConfirm}>
         <div style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: 24 }}>
-          {/* LEFT – Selected Item */}
           <Card title="Selected Item">
             <div
               style={{
@@ -49,10 +47,7 @@ const SendConnectModal = ({ open, product, onBack, onConfirm }: Props) => {
               ${product.price}
             </div>
           </Card>
-
-          {/* RIGHT – Form */}
           <div>
-            {/* Recipient Details */}
             <Card title="Recipient Details" style={{ marginBottom: 16 }}>
               <Form.Item
                 label="Recipient Email"
@@ -79,7 +74,6 @@ const SendConnectModal = ({ open, product, onBack, onConfirm }: Props) => {
               </Form.Item>
             </Card>
 
-            {/* Address Details */}
             <Card title="Address Details">
               <Row gutter={16}>
                 <Col span={12}>
@@ -145,7 +139,6 @@ const SendConnectModal = ({ open, product, onBack, onConfirm }: Props) => {
           </div>
         </div>
 
-        {/* Footer */}
         <div
           style={{
             display: 'flex',

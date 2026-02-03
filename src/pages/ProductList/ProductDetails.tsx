@@ -29,11 +29,8 @@ const ProductDetailsModal = ({ open, product, onClose, onSend }: Props) => {
         </Text>
       </div>
 
-      {/* Content */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: 32 }}>
-        {/* Left column */}
         <div>
-          {/* Main Image */}
           <div
             style={{
               background: '#d9f0d0',
@@ -48,7 +45,6 @@ const ProductDetailsModal = ({ open, product, onClose, onSend }: Props) => {
             />
           </div>
 
-          {/* Thumbnails */}
           <Space style={{ marginTop: 12 }}>
             {[1, 2, 3].map((i) => (
               <div
@@ -63,14 +59,12 @@ const ProductDetailsModal = ({ open, product, onClose, onSend }: Props) => {
             ))}
           </Space>
 
-          {/* Vendor */}
           <Card size="small" style={{ marginTop: 16 }}>
             <Text type="secondary">Vendor Name</Text>
             <div style={{ fontWeight: 500 }}>{product.vendor}</div>
           </Card>
         </div>
 
-        {/* Right column */}
         <div>
           <Title level={4} style={{ marginBottom: 4 }}>
             {product.name}
@@ -88,7 +82,6 @@ const ProductDetailsModal = ({ open, product, onClose, onSend }: Props) => {
             {product.description}
           </Paragraph>
 
-          {/* Options */}
           <Card style={{ marginTop: 16 }}>
             <Title level={5}>Product Options Available</Title>
 
@@ -115,7 +108,6 @@ const ProductDetailsModal = ({ open, product, onClose, onSend }: Props) => {
         </div>
       </div>
 
-      {/* Footer */}
       <div
         style={{
           display: 'flex',

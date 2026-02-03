@@ -7,7 +7,6 @@ const { Title } = Typography
 const ProductListPage = () => {
   return (
     <>
-      {/* Header */}
       <Row justify="space-between" align="middle" style={{ marginBottom: 16 }}>
         <Title level={3} style={{ margin: 0 }}>
           Product List
@@ -24,10 +23,7 @@ const ProductListPage = () => {
         />
       </Row>
 
-      {/* Filters */}
       <ProductFilters />
-
-      {/* Table */}
       <ProductTable />
     </>
   )

@@ -53,7 +53,6 @@ const ProductFilters = () => {
 
   return (
     <>
-      {/* Status Tabs */}
       <Tabs
         defaultActiveKey="All"
         onChange={(key) => dispatch(setStatus(key as StatusFilter))}
@@ -65,7 +64,6 @@ const ProductFilters = () => {
         ]}
       />
 
-      {/* Action Bar */}
       <Space
         style={{
           display: 'flex',

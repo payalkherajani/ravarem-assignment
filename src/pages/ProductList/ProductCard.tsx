@@ -1,4 +1,4 @@
-import { Button, Card, Space } from "antd";
+import { Button, Card } from "antd";
 import type { Product } from "../../features/products/types";
 import { useState } from "react";
 import { SendOutlined } from "@ant-design/icons";
@@ -46,7 +46,6 @@ function ProductCard({ product, setConnectOpen, setSelectedProduct, setDetailsOp
                 />
             </div>
 
-            {/* Content */}
             <div style={{ padding: 16 }}>
                 <Title level={5} style={{ marginBottom: 4 }}>
                     {product.name}

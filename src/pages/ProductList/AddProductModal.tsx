@@ -4,7 +4,6 @@ import {
   Input,
   Select,
   InputNumber,
-  notification,
   Row,
   Col,
   Card,
@@ -91,7 +90,6 @@ const AddProductModal = ({ open, onClose }: Props) => {
         onFinish={onSubmit}
       >
         <Row gutter={24}>
-          {/* LEFT: General Information */}
           <Col span={14}>
             <Card title="General Information">
               <Form.Item
@@ -155,7 +153,6 @@ const AddProductModal = ({ open, onClose }: Props) => {
             </Card>
           </Col>
 
-          {/* RIGHT: Product Media */}
           <Col span={10}>
             <Card title="Product Media">
               <Form.Item
@@ -185,7 +182,6 @@ const AddProductModal = ({ open, onClose }: Props) => {
           </Col>
         </Row>
 
-        {/* FOOTER */}
         <Row justify="end" style={{ marginTop: 24 }}>
           <Button onClick={onClose} style={{ marginRight: 8 }}>
             Cancel

@@ -53,7 +53,6 @@ const ProductTable = () => {
     },
   ]
 
-  /* 🔹 Slice products for current page */
   const paginatedProducts = useMemo(() => {
     const start = (currentPage - 1) * pageSize
     const end = start + pageSize
@@ -69,7 +68,6 @@ const ProductTable = () => {
         pagination={false}
       />
 
-      {/* Footer */}
       <div
         style={{
           display: 'flex',

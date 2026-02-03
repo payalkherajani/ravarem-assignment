@@ -10,7 +10,7 @@ export const selectFilteredProducts = createSelector(
   (products, filters) => {
     let result = [...products]
 
-    // 1️⃣ Status filter
+    // Status filter
     if (filters.status !== 'all') {
       result = result.filter(
         product =>
@@ -18,7 +18,7 @@ export const selectFilteredProducts = createSelector(
       )
     }
 
-    // 2️⃣ Search (name OR id)
+    // Search (name OR id)
     if (filters.search.trim()) {
       const query = filters.search.toLowerCase()
       result = result.filter(
@@ -28,7 +28,7 @@ export const selectFilteredProducts = createSelector(
       )
     }
 
-    // 3️⃣ Sorting
+    // Sorting
     switch (filters.sortBy) {
       case 'name_desc':
         result.sort((a, b) =>
